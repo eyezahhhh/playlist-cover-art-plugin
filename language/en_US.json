@@ -1,0 +1,5 @@
+{
+	"plugin.playlist-cover-art.name": "Playlist Cover Art",
+	"task.plugin.playlist-cover-art.generate.name": "Generate Playlist Cover Art",
+	"plugin.playlist-cover-art.user-config.generator.name": "Generator"
+}
