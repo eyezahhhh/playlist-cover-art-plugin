@@ -1,4 +1,4 @@
-import { SavedPlaylist } from "@sdk";
+import { SavedPlaylist } from "@pipe-bomb/plugin-sdk";
 import sharp, { OverlayOptions } from "sharp";
 import { Generator } from "./generator.js";
 

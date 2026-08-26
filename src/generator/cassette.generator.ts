@@ -1,4 +1,4 @@
-import { SavedPlaylist } from "@sdk";
+import { SavedPlaylist } from "@pipe-bomb/plugin-sdk";
 import { Generator } from "./generator.js";
 import sharp from "sharp";
 import { escapeXml, getAttributeValue } from "../utils.js";

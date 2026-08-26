@@ -7,7 +7,7 @@ import {
 	AttributeSourceApiContext,
 	TrackAttributionHelper,
 	TrackMetadata,
-} from "@sdk";
+} from "@pipe-bomb/plugin-sdk";
 
 export class PlaylistCoverArtAttributeSource implements AttributeSource {
 	readonly id = "playlist-cover-art";

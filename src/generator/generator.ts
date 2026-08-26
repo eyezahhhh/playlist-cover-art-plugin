@@ -3,7 +3,7 @@ import {
 	PlaylistClient,
 	SavedPlaylist,
 	SavedPlaylistTrack,
-} from "@sdk";
+} from "@pipe-bomb/plugin-sdk";
 import { IMAGE_EXTENSIONS } from "../image-extensions.js";
 
 export abstract class Generator {

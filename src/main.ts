@@ -1,4 +1,4 @@
-import type PipeBomb from "@sdk";
+import type PipeBomb from "@pipe-bomb/plugin-sdk";
 import { PlaylistCoverArtAttributeSource } from "./playlist-cover-art.attribute-source.js";
 import { Generator } from "./generator/generator.js";
 import { GridGenerator } from "./generator/grid.generator.js";

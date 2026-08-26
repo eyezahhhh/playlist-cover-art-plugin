@@ -17,6 +17,7 @@
 		"node": "24.14.1"
 	},
 	"dependencies": {
+		"@pipe-bomb/plugin-sdk": "^0.0.2",
 		"sharp": "^0.35.3"
 	}
 }

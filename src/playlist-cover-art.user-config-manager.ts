@@ -2,7 +2,7 @@ import {
 	ConfigNode,
 	UserConfigManager,
 	UserConfigManagerApiContext,
-} from "@sdk";
+} from "@pipe-bomb/plugin-sdk";
 import { Generator } from "./generator/generator.js";
 
 export class PlaylistCoverArtUserConfigManager implements UserConfigManager {
