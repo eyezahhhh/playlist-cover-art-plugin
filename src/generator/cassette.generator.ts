@@ -38,6 +38,13 @@ export class CassetteGenerator extends Generator {
 		const lineSpacing = 48;
 		const startY = 220;
 
+		let username: string;
+		if (playlist.owner.isUser) {
+			username = playlist.owner.user?.username ?? "Unknown user";
+		} else {
+			username = `> ${playlist.owner.addedByBotId ?? "SYSTEM"}< `;
+		}
+
 		let trackElements = "";
 		if (playlist.tracks) {
 			for (let i = 0; i < maxLines; i++) {
@@ -132,7 +139,7 @@ export class CassetteGenerator extends Generator {
 
       <!-- Aesthetic Metadata Block in Bottom Corner -->
       <text x="${SIZE - 60}" y="${SIZE - 40}" font-family="Courier New, Courier, monospace" font-size="14" fill="${colors.lines}" text-anchor="end" letter-spacing="1">
-        ${escapeXml(playlist.owner?.username?.toUpperCase() ?? "> SYSTEM <")} // PIPE BOMB
+        ${escapeXml(username.toUpperCase())} // PIPE BOMB
       </text>
 
       <!-- Overlay Paper Texture across the entire canvas -->

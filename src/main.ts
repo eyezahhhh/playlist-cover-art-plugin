@@ -18,7 +18,10 @@ export default class Plugin implements PipeBomb.Plugin {
 		const attributeSource = new PlaylistCoverArtAttributeSource();
 		this.api.registerAttributeSource(attributeSource);
 		const dataClient = this.api.getDataClient();
-		const playlistClient = this.api.getPlaylistClient();
+		const playlistClient = this.api.getPlaylistClient({
+			id: "generator",
+			name: "Playlist Cover Art Generator",
+		});
 
 		const GENERATORS: readonly Generator[] = [
 			new CassetteGenerator(dataClient, playlistClient),

@@ -1,6 +1,6 @@
 import {
 	DataClient,
-	PlaylistClient,
+	WritablePlaylistClient,
 	SavedPlaylist,
 	SavedPlaylistTrack,
 } from "@pipe-bomb/plugin-sdk";
@@ -9,7 +9,7 @@ import { IMAGE_EXTENSIONS } from "../image-extensions.js";
 export abstract class Generator {
 	constructor(
 		protected readonly dataClient: DataClient,
-		protected readonly playlistClient: PlaylistClient,
+		protected readonly playlistClient: WritablePlaylistClient,
 	) {}
 
 	abstract readonly id: string;
